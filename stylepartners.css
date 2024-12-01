@@ -1,0 +1,85 @@
+:root{
+    --total-brand:9;
+    --logo-width: 12rem;
+    --total-logo-width: calc(var(var(--total-brand)) * var(var(--logo-width) * 2 ));
+    --animation-duration: calc(var(--total-brand) * 5s)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 50vh;
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+}
+
+section h1{
+    padding-top: 1.5%;
+    font-size: 40px;
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+section h2{
+    font-size: 30px;
+    margin: 40px 20px;
+}
+
+section sub{
+    margin: 50px 20px;
+}
+
+.slider{
+    margin-top: 1rem;
+    width: 100vw;
+    height: 8rem;
+    background-color: #fff;
+    box-shadow: 1rem 1.4rem -.2rem #0001;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: var(--logo-width);
+}
+
+.slider ul.brands{
+    list-style: none;
+    width: var(--total-logo-width);
+    display: flex;
+    animation: slideLeft var(--animation-duration) linear infinite;
+}
+
+figcaption{
+    width: 185px;
+    font-weight: bold;
+    height: 30px;
+    font-size: medium;
+    position: absolute;
+}
+.slider:hover ul.brands{
+    animation-play-state: paused;
+
+}
+@keyframes slideLeft{
+    100%{
+        transform: translateX(-100% );
+    }
+}
+
+ul.brands li.brand-logo{
+    width: var(--logo-width);
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 3rem;
+}

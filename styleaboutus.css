@@ -1,0 +1,85 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #116466;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #d1e8e2;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Brand name style */
+#brand-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Content Section styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* Paragraph container*/
+.paragraph-container {
+    width: 48%; /* Ensures two paragraphs fit side by side */
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Different background colors for the two paragraphs */
+#first-paragraph {
+    background-color: #d1e8e2 ; 
+}
+
+#second-paragraph {
+    background-color: #d1e8e2; 
+}
+
+/* Text content style */
+.text-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #0a0000;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Sharing Platform</title>
+    <link rel="stylesheet" href="stylemenu.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <ul>
+                <li><a href="#upload-section">Upload Idea</a></li>
+                <li><a href="#drawing-section">Drawing Tool</a></li>
+                <li><a href="#text-section">Describe Idea</a></li>
+                <li><a href="#view-section">View Ideas</a></li>
+            </ul>
+        </nav>
+
+        <section id="upload-section" class="section">
+            <h2>Upload Your Idea</h2>
+            <input type="file" id="fileUpload" accept="image/*">
+        </section>
+
+        <section id="drawing-section" class="section">
+            <h2>Drawing Tool</h2>
+            <div class="toolbar">
+                <button id="pen">Pen</button>
+                <button id="eraser">Eraser</button>
+                <input type="color" id="colorPicker">
+                <button id="clear">Clear</button>
+            </div>
+            <canvas id="drawingCanvas" width="800" height="600"></canvas>
+        </section>
+
+        <section id="text-section" class="section">
+            <h2>Describe Your Idea</h2>
+            <textarea id="ideaText" rows="10" cols="50"></textarea>
+            <button id="submitText">Submit</button>
+        </section>
+
+        <section id="view-section" class="section">
+            <h2>View Ideas</h2>
+            <div id="ideaSlider" class="slider">
+                <!-- Ideas will be displayed here -->
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
