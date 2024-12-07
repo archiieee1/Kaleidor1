@@ -84,10 +84,9 @@ submitText.addEventListener('click', () => {
         textDiv.classList.add('idea-text');
         textDiv.innerText = text;
         ideaSlider.appendChild(textDiv);
-        ideaText.value = '';
-    }
+        ideaText.value = '';
+    }
 });
-
 
 submitButton.addEventListener('click', () => {
     const dataURL = canvas.toDataURL('image/png');
@@ -96,4 +95,5 @@ submitButton.addEventListener('click', () => {
     ideaSlider.appendChild(img);
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas after submission
 });
+
 
