@@ -8,6 +8,7 @@ const fileUpload = document.getElementById('fileUpload');
 const ideaText = document.getElementById('ideaText');
 const submitText = document.getElementById('submitText');
 const ideaSlider = document.getElementById('ideaSlider');
+const submitButton = document.getElementById('submit');
 
 let isDrawing = false;
 let currentTool = 'pen';
@@ -88,7 +89,11 @@ submitText.addEventListener('click', () => {
 });
 
 
-// Example of a small interaction, changing brand name color on click
-document.getElementById('brand-name').addEventListener('click', function() {
-    this.style.color = this.style.color === 'red' ? '#4CAF50' : 'red';
+submitButton.addEventListener('click', () => {
+    const dataURL = canvas.toDataURL('image/png');
+    const img = document.createElement('img');
+    img.src = dataURL;
+    ideaSlider.appendChild(img);
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas after submission
 });
+
