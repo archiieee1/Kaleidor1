@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    background-image: url(images/login\ bg.png);
+    background-size: 1540px 725px;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+.title {
+    color: #070100;
+}
+
+.sub-title {
+    color: #414040;
+}
+
+/* Login Form Container */
+.login-container {
+    width: 50%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.user-type-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-type-selection label {
+    font-size: 14px;
+}
+
+.remember-me {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    background-color: #116466;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 40%;
+    margin-top: 20px;
+}
+
