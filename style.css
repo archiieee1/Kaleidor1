@@ -385,6 +385,22 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+ @keyframes scaleAndRotate {
+    0%{
+      opacity: 0;
+      transform: scale(0.5) rotate(30deg);
+    }
+    50%{
+      opacity: 1;
+      transform: scale(0.9) rotate(0deg);
+    }
+  
+    100%{
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
   
   .services__card {
     margin: 1rem;
@@ -394,6 +410,9 @@
     background-image: url('jewellery-design-sketch.jpg');
     position: relative;
     color: #050000;
+    animation: scaleAndRotate linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
   }
   
   .services__card:before {
